@@ -1,0 +1,69 @@
+#root {
+  /* max-width: 1280px;
+  margin: 0 auto;
+  padding: 0.5rem;
+  text-align: center; */
+  /* overflow: hidden; */
+}
+
+
+
+
+
+/* .App-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#ffffff;
+
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+} */
+
+.App-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.ContactList {
+  width: 30%;
+  height: 100%;
+  overflow-y: auto;
+  border-right: 1px solid #ccc;
+}
+
+.ChatContainer {
+  width: 70%;
+  height: 100%;
+}
+
+.chat-wrapper {
+  width: 100%;
+  height: fit-content;
+}
+
+.back-button {
+  display: none;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .ContactList {
+    width: 100%;
+    display: ${({ selectedContact }) => (selectedContact ? 'none' : 'block')};
+  }
+
+  .ChatContainer {
+    width: 100%;
+    display: ${({ selectedContact }) => (selectedContact ? 'block' : 'none')};
+  }
+
+  .back-button {
+    display: block;
+  }
+}
+

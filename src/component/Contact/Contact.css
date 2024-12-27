@@ -1,0 +1,21 @@
+.contact{
+ background-color: #ffffff;
+ display: flex;
+ gap:1rem;
+ border-radius: 15px;
+ /* align-items: center; */
+padding: 1rem;
+}
+.img-container{
+ height: 50px;
+ width:50px;
+
+
+
+}
+.img-container img{
+ height: 100%;
+ width:100%;
+ object-fit: contain;
+  border-radius: 50%;
+}
