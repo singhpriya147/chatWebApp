@@ -25,7 +25,7 @@ capabilities.
 
 1. **Clone the Repository:**
     ```bash
-https://github.com/singhpriya147/chatWebApp.git
+        git clone https://github.com/singhpriya147/chatWebApp.git
  
     ```
 
