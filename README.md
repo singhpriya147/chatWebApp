@@ -1,50 +1,45 @@
-# React + TypeScript + Vite
+# Chat Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**chat Web App** is a chat web  application built using React, CSS, InstantDb. This project was developed as assignment provided by fotoowl.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Contact list**: Display a list of contacts on the left side.
+- **Chat Window**: Display the chat history of the selected contact on the
+right side.
+- **Message field**: Allow users to send new messages.
+- **Message Storage**: Use InstantDB for real-time message storage and
+retrieval.
+- **Local Storage**:Use IndexedDB to store the data locally for offline
+capabilities.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**: A JavaScript library for building user interfaces.
+- **CSS**: Styling the application.
+- **InstantDb**:for real-time message storage and retrieval,
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Running the project
+### Installation
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. **Clone the Repository:**
+    ```bash
+https://github.com/singhpriya147/chatWebApp.git
+ 
+    ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+2. **Install Dependencies:**
+    ```bash
+    npm install
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### Quick Start
+Follow these steps to quickly start the project:
+1. **Run the Application:**
+    ```bash
+    npm run dev
+    ```
+
+2. **Access the Application:**
+   Open your web browser and go to `http://localhost:5175/` to access the chat web app.
+
